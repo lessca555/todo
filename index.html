@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <script
+      src="https://kit.fontawesome.com/d508f9c7b5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>To do today</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Hello sir!</h1>
-        <h1>What you want to do today?</h1>
-        <div class="inputs"> 
-            <input type="text" placeholder="Type here..." id="new_text">
-            <button type="submit" onclick="add()">Add to list</button>
+      <h1>Good <span id="waktu"></span> </h1>
+      <h1>What is your plan today??</h1>
+      <div class="inputs">
+        <input type="text" placeholder="Type here..." id="new_text" />
+        <button type="submit" onclick="add()">Add to list</button>
+      </div>
+
+      <div class="todo">
+        <table id="todo">
+          <thead>
+            <tr>
+              <th colspan="2">To do list</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div> 
+
+    <footer>
+        <div class="etc">
+            <h1>©Christian Samuel S</h1>
+            
         </div>
-
-        <div class="todo">
-            <ul id="todo">
-
-            </ul>
-        </div>
-
-        <div class="done">
-
-        </div>
-    </div>
-
+    </footer>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
